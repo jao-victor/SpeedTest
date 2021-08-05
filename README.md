@@ -1,2 +1,17 @@
 # SpeedTest
- Teste de banda e ping com o módulo speedtest  e PyQt para a GUI
+ Teste de Download e Upload do plano de internet com o módulo Python Speedtest.
+
+ Desenvolvido com Python 3.8.10
+ Interface Gráfica desenvolvida com PyQt5
+
+ Ferramentas utilizadas
+
+   - QtDesigner
+   - venv
+
+Módulos Intalados (utilizando o pip3)
+
+   - pyqt5
+   - pyqt5-tools
+   - speedtest-cli
+    
