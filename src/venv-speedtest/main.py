@@ -14,4 +14,4 @@ upld = speed.upload(threads=threads)
 
 print(f'Download - {down}')
 print(f'Upload - {upld}')
-
+print('...')
