@@ -4,14 +4,26 @@
 import speedtest
 
 servidores = [37365]
+speed = speedtest.Speedtest()
+
+
+try:
+    speed.get_servers(servidores)
+except Exception:
+    speed.get_closest_servers()
+    speed.get_best_server()
+
 
 threads = 32
-
-speed = speedtest.Speedtest()
 
 down = speed.download(threads=threads) 
 upld = speed.upload(threads=threads) 
 
-print(f'Download - {down}')
-print(f'Upload - {upld}')
+
+print(f'Download - {down} Mbps')
+print(f'Upload - {upld} Mbps')
+#print(f'Ping {ping}')
 print('...')
+
+results_dict = s.results.dict()
+print(results_dict)
