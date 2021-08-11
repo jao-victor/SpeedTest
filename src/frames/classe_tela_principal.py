@@ -9,8 +9,6 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from frames.logos import imagens
-import start_speedtest 
 
 class Ui_Dialog(object):
         def setupUi(self, Dialog):
@@ -160,7 +158,7 @@ class Ui_Dialog(object):
                 self.label_servidor.setStyleSheet("color: white;")
                 self.label_servidor.setObjectName("label_servidor")
                 self.nome_servidor = QtWidgets.QLabel(self.frame_inferior)
-                self.nome_servidor.setGeometry(QtCore.QRect(210, 70, 161, 16))
+                self.nome_servidor.setGeometry(QtCore.QRect(210, 70, 200, 16))
                 self.nome_servidor.setStyleSheet("color: white;")
                 self.nome_servidor.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
                 self.nome_servidor.setObjectName("nome_servidor")
@@ -200,30 +198,13 @@ class Ui_Dialog(object):
                 _translate = QtCore.QCoreApplication.translate
                 Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
                 self.label_download.setText(_translate("Dialog", "Download"))
-                self.label_valorDownload.setText(_translate("Dialog", "100,00"))
+                self.label_valorDownload.setText(_translate("Dialog", "000,00"))
                 self.label_upload.setText(_translate("Dialog", "Upload"))
-                self.label_valorUpload.setText(_translate("Dialog", "100,00"))
+                self.label_valorUpload.setText(_translate("Dialog", "000,00"))
                 self.btn_comecar.setText(_translate("Dialog", "Começar"))
                 self.btn_add.setText(_translate("Dialog", "Add"))
                 self.label_servidor.setText(_translate("Dialog", "Servidor: "))
-                self.nome_servidor.setText(_translate("Dialog", "Sim Telecom"))
+                self.nome_servidor.setText(_translate("Dialog", " "))
                 self.label_latencia.setText(_translate("Dialog", "Latencia:"))
                 self.coletando_dados.setText(_translate("Dialog", "Coletando dados..."))
-                self.latencia.setText(_translate("Dialog", "12ms"))
-
-
-        def comecar(self):
-                pass
-
-if __name__ == "__main__":
-        import sys
-        app = QtWidgets.QApplication(sys.argv)
-        Dialog = QtWidgets.QDialog()
-        ui = Ui_Dialog()
-        ui.setupUi(Dialog)
-
-        ui.btn_add.clicked.connect(Ui_Dialog.delas)
-
-        Dialog.show()
-        sys.exit(app.exec_())
-
+                self.latencia.setText(_translate("Dialog", " "))

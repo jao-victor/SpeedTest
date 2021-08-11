@@ -18,27 +18,20 @@ def start():
     down = speed.download(threads=threads) 
     upld = speed.upload(threads=threads) 
     results_dict = speed.results.dict()
-    name_server = results_dict.get('client', 'erro').get('isp', 'erro')
-    latencia = results_dict.get('server').get('lat')
+    name_server = results_dict ['client'] ['isp']
+    latencia = results_dict['server'] ['lat']
 
-    '''print(f'Download - {down} Mbps')
-    print(f'Upload - {upld} Mbps')
-    print(f'Servidor: {name_server}')
-    print(f'Latência: {latencia} ms')'''
 
     # FORMATANDO DADOS
-    down = str(down)
-    print(type(down))
-    down = down.split('.')
-    down = int(down[0]) / 1000 / 1000
-    print(down)
+    down = int(down) / 1000 / 1000
+    down = round(down, 2)
 
+  
+    upld = int(upld) / 1000 / 1000
+    upld = round(upld, 2)
 
-    upld = str(upld)
-    print(type(upld))
-    upld = upld.split('.')
-    upld = int(upld[0]) / 1000 / 1000
-    print(upld)
+    latencia = float(latencia)
+    latencia = round(latencia, 2)
 
-    return [down, upld]
+    return [down, upld, latencia, name_server]
 
