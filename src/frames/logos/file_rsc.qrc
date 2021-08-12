@@ -5,6 +5,9 @@
   <qresource prefix="globo">
     <file>globo_redimensionado.png</file>
   </qresource>
+  <qresource prefix="ping">
+    <file>seta-cima-baixo-redimensionada.png</file>
+  </qresource>
   <qresource prefix="download">
     <file>seta_para_baixo_redimensionada.png</file>
   </qresource>
