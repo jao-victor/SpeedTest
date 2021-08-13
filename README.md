@@ -14,4 +14,6 @@ Módulos Intalados (utilizando o pip3)
    - pyqt5
    - pyqt5-tools
    - speedtest-cli
+
+![img](https://github.com/jao-victor/SpeedTest/blob/main/speedtest.png)
     
