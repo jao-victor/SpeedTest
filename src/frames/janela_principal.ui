@@ -335,31 +335,6 @@ QPushButton::hover {
           <string>Começar</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="btn_add">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>150</y>
-           <width>80</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-border: 1px;
-background-color: #18A558;;
-color: white;
-border-radius: 15px
-}
-
-QPushButton::hover {
-	background-color: #00FF00;
-}</string>
-         </property>
-         <property name="text">
-          <string>Add</string>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_servidor">
          <property name="geometry">
           <rect>
@@ -380,7 +355,7 @@ QPushButton::hover {
          <property name="geometry">
           <rect>
            <x>88</x>
-           <y>93</y>
+           <y>84</y>
            <width>190</width>
            <height>16</height>
           </rect>
@@ -415,7 +390,7 @@ QPushButton::hover {
          <property name="geometry">
           <rect>
            <x>90</x>
-           <y>110</y>
+           <y>104</y>
            <width>57</width>
            <height>16</height>
           </rect>
@@ -497,10 +472,10 @@ background-position: center;</string>
         <widget class="QPushButton" name="btn_close">
          <property name="geometry">
           <rect>
-           <x>370</x>
+           <x>360</x>
            <y>150</y>
            <width>80</width>
-           <height>41</height>
+           <height>31</height>
           </rect>
          </property>
          <property name="styleSheet">

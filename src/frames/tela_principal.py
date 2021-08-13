@@ -1,4 +1,4 @@
-from frames.classe_tela_principal import Ui_Dialog
+from frames.janela_principal import Ui_Dialog
 from frames.logos import imagens_app
 from start_speedtest import start
 from PyQt5.QtWidgets import QDialog
@@ -33,4 +33,7 @@ class JanelaPrincipal(QDialog):
         self.janela_principal.latencia.setText(self.latencia)
 
     def close(self):
+        import sys
         self.reject()
+        sys.exit(1)
+

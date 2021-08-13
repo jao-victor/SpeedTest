@@ -143,19 +143,6 @@ class Ui_Dialog(object):
 "    background-color:     #00FF00;\n"
 "}")
         self.btn_comecar.setObjectName("btn_comecar")
-        self.btn_add = QtWidgets.QPushButton(self.frame_inferior)
-        self.btn_add.setGeometry(QtCore.QRect(0, 150, 80, 41))
-        self.btn_add.setStyleSheet("QPushButton {\n"
-"border: 1px;\n"
-"background-color: #18A558;;\n"
-"color: white;\n"
-"border-radius: 15px\n"
-"}\n"
-"\n"
-"QPushButton::hover {\n"
-"    background-color: #00FF00;\n"
-"}")
-        self.btn_add.setObjectName("btn_add")
         self.label_servidor = QtWidgets.QLabel(self.frame_inferior)
         self.label_servidor.setGeometry(QtCore.QRect(30, 84, 57, 15))
         self.label_servidor.setStyleSheet("color: white;")
@@ -201,7 +188,7 @@ class Ui_Dialog(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Plain)
         self.frame.setObjectName("frame")
         self.btn_close = QtWidgets.QPushButton(self.frame_inferior)
-        self.btn_close.setGeometry(QtCore.QRect(370, 150, 80, 41))
+        self.btn_close.setGeometry(QtCore.QRect(180, 150, 80, 41))
         self.btn_close.setStyleSheet("QPushButton {\n"
 "border: 1px;\n"
 "background-color: red;\n"
@@ -228,9 +215,6 @@ class Ui_Dialog(object):
         self.label_upload.setText(_translate("Dialog", "Upload"))
         self.label_valorUpload.setText(_translate("Dialog", "00,00"))
         self.btn_comecar.setText(_translate("Dialog", "Começar"))
-        self.btn_add.setText(_translate("Dialog", "Add"))
         self.label_servidor.setText(_translate("Dialog", "Servidor: "))
         self.label_latencia.setText(_translate("Dialog", "Latencia:"))
         self.btn_close.setText(_translate("Dialog", "Finalizar"))
-
-
